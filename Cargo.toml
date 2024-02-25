@@ -1,0 +1,17 @@
+[package]
+name = "shine_installer"
+version = "3.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+steamlocate = "0.*"
+spinoff = { version = "0.8.0", features = ["point"] }
+reqwest = { version = "*", features = ["blocking"] }
+colored = "*"
+winsafe = { version = "*", features = ["shell"] }
+press-btn-continue = "0.2.0"
+
+[build-dependencies]
+winres = "0.1.12"
